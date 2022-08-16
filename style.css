@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* Big Shoulders Display
+
+    Lexend Deca
+    */
+body{
+    background-color: #F2F2F2;
+}
+.container{
+    max-width: 930px;
+    width: 100%;
+    max-height: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 9%;
+    overflow: auto;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    width: 310px;
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    width: 310px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 310px;
+}
+.car{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.title{
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    color: #F1F2F4;
+    font-size: xx-large;
+}
+.description{
+    margin-top: 40px;
+    margin-left: 50px;
+    max-width: 200px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+.learn_more{
+    height: 50px;
+    width: 150px;
+    background-color: #F1F2F4;
+    border-radius: 25px;
+    border: none;  
+    margin-top: 20px;
+    margin-left: 50px;  
+    margin-bottom: 50px;
+    font-family: 'Lexend Deca';
+    font-size: medium;
+}
+.learn_more:hover{
+    background-color: transparent;
+    border: 3px #F1F2F4 solid;
+    cursor: pointer;
+}
+#button_sedan{
+    color: hsl(31, 77%, 52%);
+}
+#button_sedan:hover{
+    color: #F1F2F4;
+}
+#button_suv{
+    color: hsl(184, 100%, 22%);
+}
+#button_suv:hover{
+    color: #F1F2F4;
+}
+#button_luxury{
+    color: hsl(179, 100%, 13%);
+}
+#button_luxury:hover{
+    color: #F1F2F4;
+}
+@media only screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+        max-width: 330px;
+        max-height: 1320px;
+        height: 1320px;
+    }
+    .sedan{
+        height: 440px;
+        width: 100%;
+    }
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+        height: 440px;
+        width: 100%;
+    }
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        height: 440px;
+        width: 100%;
+    }
+    .description{
+        font-size: small;
+        margin-top: 30px;
+    }
+    .title{
+        margin-top: 30px;
+    }
+    .learn_more{
+        margin-bottom: auto;
+    }
+}
